@@ -1,0 +1,26 @@
+@import "tailwindcss";
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
+  border: 2px !important;
+  padding: 1px !important;
+}
+.swiper-pagination-bullet {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  opacity: 0.6;
+}
+.black-button {
+  @apply md:px-6 md:py-3 px-2 py-1  bg-black text-white rounded-full hover:cursor-pointer;
+}
+.white-button {
+  @apply md:px-6 md:py-3 px-2 py-1 bg-white text-black rounded-full hover:cursor-pointer;
+}
+
+.slide-item {
+  @apply transition-all duration-300;
+}
