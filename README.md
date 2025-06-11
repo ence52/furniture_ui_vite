@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# Furniture UI - React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Furniture UI is a simple user interface project built with React and Vite. It is designed to be modern and fast, focusing on a furniture-themed application.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fast and lightweight UI based on React
+- Development and build setup with Vite
+- Simple and clean component structure
+- Mobile responsive design
 
-## Expanding the ESLint configuration
+## Installation and Running
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+To run the project locally, follow these steps:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1. **Clone the repository**
+
+```bash
+git clone https://github.com/ence52/furniture_ui_vite.git
+cd furniture_ui_vite
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2.Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+Open the URL shown in your browser (usually http://localhost:5173) to view the app.
+
+Building for Production
+To prepare the app for production, run:
+
+```bash
+npm run build
+```
+
+And to preview the build
+
+```bash
+npm run preview
+```
+
+## Images
+
+<div>
+  <img src="https://github.com/user-attachments/assets/d6010708-2b08-47d3-a7c7-eaa3841351ee" alt="1" />
+  <img src="https://github.com/user-attachments/assets/920aae07-2e49-43d4-86af-cd90a2bb99b9" alt="2" />
+  <img src="https://github.com/user-attachments/assets/92ef8c21-7e55-401b-9562-362b7dfd2144" alt="3" />
+  <img src="https://github.com/user-attachments/assets/97dfd460-dc89-473a-903b-4667cb1ced3d" alt="4" />
+  <img src="https://github.com/user-attachments/assets/671d9066-ca5b-4978-892b-f75019347d90" alt="5" />
+  <img src="https://github.com/user-attachments/assets/5fc44a9c-0c22-4f6e-af86-6280fe2b150b" alt="6" />
+</div>
